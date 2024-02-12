@@ -27,6 +27,14 @@
           basemap: "arcgis/topographic" // basemap styles service
         });
 
+
+        const geojsonLayer = new GeoJSONLayer({
+            url: MegaCities.geojson, https://swashburn17.github.io/GeoJsonEsri/MegaCities.geojson,
+            copyright: "Sounny GeoJSON"
+        
+        });
+
+
         const view = new MapView({
           map: map,
           center: [-118.805, 34.027], // Longitude, latitude
