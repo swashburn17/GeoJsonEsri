@@ -29,9 +29,8 @@
 
 
         const geojsonLayer = new GeoJSONLayer({
-            url: MegaCities.geojson, https://swashburn17.github.io/GeoJsonEsri/MegaCities.geojson,
+            url: MegaCities.geojson, https://swashburn17.github.io/GeoJsonEsri/MegaCities.geojson
             copyright: "Sounny GeoJSON"
-        
         });
 
 
@@ -39,7 +38,8 @@
           map: map,
           center: [-118.805, 34.027], // Longitude, latitude
           zoom: 13, // Zoom level
-          container: "viewDiv" // Div element
+          container: "viewDiv", // Div element
+          layers: [geojsonlayer]
         });
 
       });
